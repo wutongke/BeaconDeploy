@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.scaletest"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <!-- 允许应用访问网络上的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.scaletest.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.scaletest.ListActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.scaletest.BeaconDeploy"
+             >
+        </activity>
+        <activity
+            android:name="sortListView.SortListActivity"
+             >
+        </activity>
+
+        <!-- sdk服务 -->
+        <service android:name="com.lef.ibeacon.service.UpdateService" />
+        <service
+            android:name="com.lef.ibeacon.service.IBeaconService"
+            android:enabled="true"
+            android:exported="true"
+            android:isolatedProcess="false"
+            android:label="iBeacon" >
+        </service>
+        <service
+            android:name="com.lef.ibeacon.IBeaconIntentProcessor"
+            android:enabled="true" >
+            <meta-data
+                android:name="background"
+                android:value="true" />
+
+            <intent-filter android:priority="1" >
+                <action android:name="com.lef.ibeacon.DID_RANGING" />
+                <action android:name="com.lef.ibeacon.DID_MONITORING" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

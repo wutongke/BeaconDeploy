@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#55333333"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+    <Button
+        android:id="@+id/gotoDetailMap"
+        android:layout_width="42dp"
+        android:layout_height="38dp"
+        android:background="@drawable/map_detail"/>
+
+    <TextView
+        android:id="@+id/locationInfo"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="8dp"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="教务办公室" />
+    
+</LinearLayout>

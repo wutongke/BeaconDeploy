@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:layout_above="@+id/bottomBar"
+        >
+    </LinearLayout>
+<!--  -->
+    <ListView
+        android:id="@+id/facilityListView"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomBar"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shap_corner" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/botton"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/removeall"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/buttom"
+            android:text="清空"
+            android:textColor="#EEEEEE" />
+
+        <Button
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/buttom"
+            android:text="查找"
+            android:textColor="#EEEEEE" />
+
+        <Button
+            android:id="@+id/wc"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/buttom"
+            android:text="公共设施"
+            android:textColor="#EEEEEE" />
+
+        <Button
+            android:id="@+id/beaconshow"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/buttom"
+            android:text="显示云子"
+            android:textColor="#EEEEEE" />
+    </LinearLayout>
+
+</RelativeLayout>

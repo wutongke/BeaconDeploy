@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_activity_act_procedure_list">ActProcedureList</string>
+    <string name="app_name">Beacon部署</string>
+    <string name="ibeacon_list">Beacon列表</string>
+    <string name="ibeacon_attribute">Beacon属性设置</string>
+    <string name="action_settings">Settings</string>
+    <string name="distance">距离</string>
+    <string name="ID">ID</string>
+    <string name="title_activity_yunzi_modify">修改配置</string>
+    <string name="title_activity_yun_zi_set">设置云子</string>
+    <string name="beaconPassword">666666</string>
+    <string name="title_activity_beacon_modif">BeaconModif</string>
+    <string name="title_activity_yun_zi">YunZiActivity</string>
+    <string name="title_activity_beacon_modify">BeaconModify</string>
+    <string name="update_title">MODIFY BEACON PROPERTIES</string>
+    <string name="update_uuid">UUID</string>
+    <string name="update_major">MAJOR</string>
+    <string name="update_minor">MINOR</string>
+    <string name="update_rssi">CALIBRATED RSSI</string>
+    <string name="update_rssi_unit">dBm</string>
+    <string name="update_connect_title">Connect to the beacon</string>
+    <string name="update_connect_subtitle">Touch to see how to enable Config Mode.</string>
+    <string name="update_error_device_not_supported">Required service has not been found. Restart Bluetooth and try again.</string>
+    <string name="update_error_other">Error %d occurred.</string>
+
+</resources>

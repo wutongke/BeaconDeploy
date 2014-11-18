@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/filter_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp" />
+ 
+    <sortListView.SideBar
+        android:id="@+id/sidebar"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/filter_edit" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filter_edit"
+        android:layout_toLeftOf="@+id/sidebar" >
+    </ListView>
+    <TextView
+        android:id="@+id/dialog"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="#00FF00"
+        android:visibility="gone"
+        android:text="A" />
+</RelativeLayout>

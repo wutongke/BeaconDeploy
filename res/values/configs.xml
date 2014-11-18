@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 此为程序模块配置文件 -->
+     <!-- 地体文件所在目录-->
+      <string name="FILE_PATH">/VMapDemo/</string>
+    <!--行政楼、 校园平面图-->
+    <!--  -->
+   
+    
+   
+    <string-array name="DBFILE_IDS">
+        <item>c00fe2e3-daee-4ef9-9572-244ea3d36ae4</item>
+        <item>23f9e68b-23d4-47aa-bac2-c5e764006e30</item>
+        <item>33a9c8ee-35d4-4f31-b792-ff66ba1dfa62</item>
+        <item>460919d6-d356-43c0-90f3-978336ed68ee</item>
+        <item>52ec1285-de91-4a21-86d8-fd85bdc236f2</item>
+        <item>5da81c33-71bd-4ea8-8c39-f6b5a0eca83f</item>
+        <item>899ec5ab-b9e7-444c-98a2-f76cfa223a47</item>
+        <item>c38a52a6-4e85-4937-8522-fa7997090bd3</item>
+        <item>e9f6a2de-eadc-45af-a42e-c7458a401339</item>
+        <item>eff6607f-ce46-400f-8cb1-6a74a993b8e3</item>
+        <item>f703ec59-6a6a-4922-adde-3b535d16dcdf</item>
+    </string-array>
+    
+    <string-array name="DBFILE_NAMES">
+         <item>行政楼</item>
+        <item>校园平面图</item>
+        <item>微软大厦（望京）2层展示厅</item>
+        <item>北京邮电大学第二教学楼</item>
+        <item>北京邮电大学教四楼</item>
+        <item>北京邮电大学的主教学楼</item>
+        <item>北京邮电大学教一楼</item>
+        <item>北京邮电大学的图书馆</item>
+        <item>北京邮电大学教三楼</item>
+        <item>北京邮电大学的科研教育楼</item>
+        <item>北邮南门小吃街</item>
+    </string-array>
+    
+</resources>

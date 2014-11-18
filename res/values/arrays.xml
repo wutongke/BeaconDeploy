@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string-array name="date">
+    <item>-</item>
+    <item>AR</item>
+    <item>AU</item>
+    <item>BR</item>
+    <item>BG</item>
+    <item>CA</item>
+    <item>CN</item>
+    <item>CZ</item>
+    <item>DE</item>
+    <item>DK</item>
+    <item>ES</item>
+    <item>FI</item>
+    <item>FR</item>
+    <item>GB</item>
+    <item>中国</item>
+    <item>HU</item>
+    <item>ID</item>
+    <item>IT</item>
+    <item>阿拉伯</item>
+    <item>KR</item>
+    <item>NL</item>
+    <item>PL</item>
+    <item>PT</item>
+    <item>RU</item>
+    <item>SE</item>
+    <item>90</item>
+    <item>SI</item>
+    <item>$</item>
+    <item>TW</item>
+    <item>US</item>
+  </string-array>
+  <string-array name="spinnerMode">
+        <item>选择</item>
+        <item>修改 </item>
+        <item>选定</item>
+        <item>提交</item>
+        <item>刷新</item>
+  </string-array>
+    <string-array 
+        name = "yunziPower1">
+        <item>未选择</item>
+        <item>最低（-20db）</item>
+        <item>很低（-16db）</item>
+        <item>低（-12db）</item>
+        <item>中等（-8db）</item>
+        <item>高（-4db）</item>
+        <item>很高（0db）</item>
+        <item>最高（+4db）</item>
+    </string-array>
+    <string-array name = "yunziadvertize1">
+        <item>未选择</item>
+        <item>最低（5s）</item>
+        <item>较低（2s）</item>
+        <item>中等（1s）</item>
+        <item>较高(500ms)）</item>
+        <item>很高(300ms)）</item>
+        <item>最高（100ms）</item>
+    </string-array>
+    <string-array 
+        name = "temperature_frequency">
+        <item>关闭</item>
+        <item>1秒</item>
+        <item>2秒</item>
+        <item>5秒</item>
+        <item>10秒</item>
+        <item>30秒</item>
+        <item>60秒</item>
+    </string-array>
+    <string-array 
+        name = "light_frequency">
+        <item>关闭</item>
+        <item>1秒</item>
+        <item>2秒</item>
+        <item>5秒</item>
+        <item>10秒</item>
+        <item>30秒</item>
+        <item>60秒</item>
+    </string-array>
+    <string-array name="accelerate_frequency">
+        <item > 关闭</item>
+        <item >最低</item>
+        <item >中等</item>
+        <item >最高</item>
+    </string-array>
+</resources>

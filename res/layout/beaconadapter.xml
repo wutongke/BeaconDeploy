@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/background_dark"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" 
+        android:background="@drawable/background">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/ibeacon_attribute_interval"
+                android:layout_marginRight="@dimen/ibeacon_attribute_interval"
+                android:text="RSSI"
+                android:textColor="@color/ibeacon_attribute_name"
+                android:textSize="@dimen/ibeacon_attribute_name_size" />
+
+            <ImageView
+                android:id="@+id/rssi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/ibeacon_attribute_interval"
+                android:layout_marginRight="@dimen/ibeacon_attribute_interval" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/ibeacon_attribute_interval"
+                android:layout_marginRight="@dimen/ibeacon_attribute_interval"
+                android:text="MAJOR"
+                android:textColor="@color/ibeacon_attribute_name"
+                android:textSize="@dimen/ibeacon_attribute_name_size" />
+
+            <TextView
+                android:id="@+id/major"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/ibeacon_attribute_interval"
+                android:layout_marginRight="@dimen/ibeacon_attribute_interval"
+                android:textColor="@color/ibeacon_attribute_value"
+                android:textSize="@dimen/ibeacon_attribute_value_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/ibeacon_attribute_interval"
+                android:layout_marginRight="@dimen/ibeacon_attribute_interval"
+                android:text="MINOR"
+                android:textColor="@color/ibeacon_attribute_name"
+                android:textSize="@dimen/ibeacon_attribute_name_size" />
+
+            <TextView
+                android:id="@+id/minor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/ibeacon_attribute_interval"
+                android:layout_marginRight="@dimen/ibeacon_attribute_interval"
+                android:textColor="@color/ibeacon_attribute_value"
+                android:textSize="@dimen/ibeacon_attribute_value_size" />
+        </LinearLayout>
+        <ImageView 
+            android:id="@+id/canbeconnected"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/distance"
+            android:textColor="@color/ibeacon_attribute_name"
+            android:textSize="@dimen/ibeacon_attribute_name_size" />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="80dp"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/ibeacon_attribute_interval"
+            android:textColor="@color/ibeacon_attribute_value"
+            android:textSize="@dimen/ibeacon_attribute_value_size" 
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/ID"
+            android:textColor="@color/ibeacon_attribute_name"
+            android:textSize="@dimen/ibeacon_attribute_name_size" />
+
+        <TextView
+            android:id="@+id/ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="160dp"
+            android:gravity="center"
+            android:textColor="@color/ibeacon_attribute_value"
+            android:textSize="@dimen/ibeacon_attribute_value_size" />
+    </LinearLayout>
+
+</LinearLayout>
